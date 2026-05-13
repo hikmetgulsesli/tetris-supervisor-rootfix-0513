@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Game Options</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Geist:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#594400",
+                        "on-primary-fixed-variant": "#4f378a",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-background": "#e6e0e9",
+                        "surface-container-high": "#2b292f",
+                        "tertiary-fixed-dim": "#e7c365",
+                        "outline-variant": "#494551",
+                        "on-error": "#690005",
+                        "surface-container-low": "#1d1b20",
+                        "on-tertiary-container": "#503d00",
+                        "error-container": "#93000a",
+                        "surface-variant": "#36343a",
+                        "surface": "#141218",
+                        "on-primary": "#381e72",
+                        "inverse-on-surface": "#322f35",
+                        "on-secondary-container": "#bfb2da",
+                        "tertiary": "#e7c365",
+                        "surface-container": "#211f24",
+                        "surface-container-highest": "#36343a",
+                        "surface-tint": "#cfbcff",
+                        "secondary-fixed-dim": "#cdc0e9",
+                        "inverse-primary": "#6750a4",
+                        "on-secondary-fixed-variant": "#4b4263",
+                        "secondary-container": "#4d4465",
+                        "surface-dim": "#141218",
+                        "on-surface-variant": "#cbc4d2",
+                        "primary-fixed-dim": "#cfbcff",
+                        "primary": "#cfbcff",
+                        "background": "#141218",
+                        "tertiary-fixed": "#ffdf93",
+                        "on-error-container": "#ffdad6",
+                        "outline": "#948e9c",
+                        "inverse-surface": "#e6e0e9",
+                        "surface-bright": "#3b383e",
+                        "tertiary-container": "#c9a74d",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#e0d2ff",
+                        "on-tertiary": "#3e2e00",
+                        "secondary-fixed": "#e9ddff",
+                        "secondary": "#cdc0e9",
+                        "on-surface": "#e6e0e9",
+                        "on-secondary": "#342b4b",
+                        "on-secondary-fixed": "#1f1635",
+                        "primary-fixed": "#e9ddff",
+                        "primary-container": "#6750a4",
+                        "surface-container-lowest": "#0f0d13",
+                        "on-primary-fixed": "#22005d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "lg": "24px",
+                        "xl": "32px",
+                        "xs": "4px",
+                        "touch-target": "44px",
+                        "md": "16px",
+                        "grid-cell": "32px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-panel": ["Space Grotesk"],
+                        "label-mono-sm": ["JetBrains Mono"],
+                        "body-standard": ["Geist"],
+                        "label-mono": ["JetBrains Mono"],
+                        "display-score": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-panel": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "label-mono-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-standard": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "display-score": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #141218;
+            background-image: 
+                linear-gradient(rgba(51, 65, 85, 0.2) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(51, 65, 85, 0.2) 1px, transparent 1px);
+            background-size: 32px 32px; /* Grid cell size */
+            background-position: center;
+        }
+        
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: transparent;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 24px;
+            width: 12px;
+            border-radius: 2px;
+            background: #cfbcff; /* primary */
+            cursor: pointer;
+            margin-top: -10px; 
+            box-shadow: 0 0 8px rgba(207, 188, 255, 0.5);
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #494551; /* outline-variant */
+            border-radius: 2px;
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        input[type=range]:focus::-webkit-slider-thumb {
+            outline: 2px solid #cfbcff;
+            outline-offset: 2px;
+        }
+        
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #cfbcff;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #cfbcff;
+        }
+    </style>
+</head>
+<body class="text-[#F8FAFC] min-h-screen flex flex-col font-body-standard">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface border-b border-outline-variant shadow-[0_0_15px_rgba(207,188,255,0.1)] flex justify-between items-center px-lg py-sm w-full z-50 docked full-width top-0">
+<div class="flex items-center gap-md">
+<button class="text-primary dark:text-primary hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors duration-200 p-sm rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-headline-panel text-headline-panel font-bold tracking-tighter text-primary dark:text-primary">SUPERVISOR ROOT</h1>
+</div>
+<div class="flex items-center gap-sm text-on-surface-variant dark:text-on-surface-variant">
+<button class="hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors duration-200 p-sm rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">help</span>
+</button>
+<button class="hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors duration-200 p-sm rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<div class="flex flex-1 overflow-hidden">
+<!-- SideNavBar -->
+<nav class="bg-surface-container-low dark:bg-surface-container-low hidden lg:flex flex-col fixed left-0 top-0 h-full z-40 py-xl docked left-0 h-full w-64 border-r border-outline-variant flat no-shadows pt-24">
+<div class="px-md mb-xl">
+<h2 class="text-headline-panel font-headline-panel text-primary mb-xs">OPERATOR</h2>
+<p class="font-label-mono text-label-mono text-on-surface-variant">V.01-ROOT</p>
+</div>
+<div class="flex flex-col gap-xs mt-lg">
+<a class="text-on-surface-variant px-md py-sm flex items-center gap-md hover:bg-surface-variant hover:text-on-surface transition-all duration-150 font-label-mono text-label-mono" href="#">
+<span class="material-symbols-outlined">videogame_asset</span>
+                    CLASSIC
+                </a>
+<a class="text-on-surface-variant px-md py-sm flex items-center gap-md hover:bg-surface-variant hover:text-on-surface transition-all duration-150 font-label-mono text-label-mono" href="#">
+<span class="material-symbols-outlined">timer</span>
+                    SPRINT
+                </a>
+<a class="text-on-surface-variant px-md py-sm flex items-center gap-md hover:bg-surface-variant hover:text-on-surface transition-all duration-150 font-label-mono text-label-mono" href="#">
+<span class="material-symbols-outlined">leaderboard</span>
+                    RANKED
+                </a>
+<a class="bg-primary-container text-on-primary-container font-bold border-l-4 border-primary px-md py-sm flex items-center gap-md transition-transform translate-x-1 font-label-mono text-label-mono" href="#">
+<span class="material-symbols-outlined">settings</span>
+                    SETTINGS
+                </a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 w-full lg:ml-64 flex justify-center items-start pt-xl pb-32 px-md overflow-y-auto">
+<div class="w-full max-w-2xl bg-surface border border-outline-variant rounded-lg p-xl relative">
+<!-- Decorative Corner Accents -->
+<div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-primary rounded-tl-lg"></div>
+<div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-primary rounded-tr-lg"></div>
+<div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-primary rounded-bl-lg"></div>
+<div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-primary rounded-br-lg"></div>
+<div class="mb-xl border-b border-outline-variant pb-md">
+<h2 class="font-headline-panel text-display-score text-primary">Settings</h2>
+<p class="font-label-mono text-label-mono text-on-surface-variant mt-sm">CONFIGURE OPERATING PARAMETERS</p>
+</div>
+<div class="space-y-xl">
+<!-- Audio Section -->
+<section class="space-y-md">
+<h3 class="font-headline-panel text-headline-panel text-secondary border-b border-outline-variant/50 pb-xs mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary">volume_up</span> AUDIO
+                        </h3>
+<div class="space-y-lg">
+<div class="flex flex-col gap-sm">
+<div class="flex justify-between items-center">
+<label class="font-label-mono text-label-mono text-[#F8FAFC]">MASTER VOLUME</label>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">80%</span>
+</div>
+<input class="w-full" max="100" min="0" type="range" value="80"/>
+</div>
+<div class="flex flex-col gap-sm">
+<div class="flex justify-between items-center">
+<label class="font-label-mono text-label-mono text-[#F8FAFC]">SFX VOLUME</label>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">100%</span>
+</div>
+<input class="w-full" max="100" min="0" type="range" value="100"/>
+</div>
+<div class="flex flex-col gap-sm">
+<div class="flex justify-between items-center">
+<label class="font-label-mono text-label-mono text-[#F8FAFC]">MUSIC VOLUME</label>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">60%</span>
+</div>
+<input class="w-full" max="100" min="0" type="range" value="60"/>
+</div>
+</div>
+</section>
+<!-- Gameplay Section -->
+<section class="space-y-md">
+<h3 class="font-headline-panel text-headline-panel text-secondary border-b border-outline-variant/50 pb-xs mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary">sports_esports</span> GAMEPLAY
+                        </h3>
+<div class="space-y-lg">
+<div class="flex justify-between items-center bg-surface-variant p-md rounded border border-outline-variant">
+<div>
+<h4 class="font-label-mono text-label-mono text-[#F8FAFC]">GHOST PIECE</h4>
+<p class="font-label-mono-sm text-label-mono-sm text-on-surface-variant mt-xs">Display landing position projection</p>
+</div>
+<div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-surface border-4 border-outline-variant appearance-none cursor-pointer z-10" id="toggle1" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-outline-variant cursor-pointer" for="toggle1"></label>
+</div>
+</div>
+<div class="flex justify-between items-center bg-surface-variant p-md rounded border border-outline-variant">
+<div>
+<h4 class="font-label-mono text-label-mono text-[#F8FAFC]">HARD DROP SHAKE</h4>
+<p class="font-label-mono-sm text-label-mono-sm text-on-surface-variant mt-xs">Screen shake on hard drop</p>
+</div>
+<div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
+<input class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-surface border-4 border-outline-variant appearance-none cursor-pointer z-10" id="toggle2" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-outline-variant cursor-pointer" for="toggle2"></label>
+</div>
+</div>
+<div class="flex flex-col gap-sm bg-surface-variant p-md rounded border border-outline-variant">
+<div class="flex justify-between items-center">
+<label class="font-label-mono text-label-mono text-[#F8FAFC]">STARTING DIFFICULTY (SPEED)</label>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">LEVEL 5</span>
+</div>
+<input class="w-full mt-sm" max="15" min="1" type="range" value="5"/>
+<div class="flex justify-between text-on-surface-variant font-label-mono-sm text-label-mono-sm mt-xs">
+<span>1</span>
+<span>15</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Actions -->
+<div class="pt-lg flex justify-end gap-md border-t border-outline-variant">
+<button class="h-touch-target px-xl border border-outline-variant text-[#F8FAFC] font-label-mono text-label-mono hover:bg-surface-variant transition-colors rounded">
+                            RESET DEFAULTS
+                        </button>
+<button class="h-touch-target px-xl border border-primary bg-primary/10 text-primary font-label-mono text-label-mono hover:bg-primary hover:text-[#141218] transition-colors rounded shadow-[0_0_10px_rgba(207,188,255,0.2)]">
+                            SAVE CHANGES
+                        </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- BottomNavBar -->
+<nav class="bg-surface-container-highest dark:bg-surface-container-highest lg:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-touch-target px-md docked full-width bottom-0 rounded-t-xl border-t border-outline-variant shadow-[0_-4px_20px_rgba(231,195,101,0.1)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-lg py-xs hover:text-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-label-mono-sm text-label-mono-sm mt-xs">GAME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-lg py-xs hover:text-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined">monitoring</span>
+<span class="font-label-mono-sm text-label-mono-sm mt-xs">STATS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-lg py-xs hover:text-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-label-mono-sm text-label-mono-sm mt-xs">SOCIAL</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-tertiary-container text-on-tertiary-container rounded-lg px-lg py-xs scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined">security</span>
+<span class="font-label-mono-sm text-label-mono-sm mt-xs">ROOT</span>
+</a>
+</nav>
+</body></html>
