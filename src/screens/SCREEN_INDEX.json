@@ -1,0 +1,182 @@
+[
+  {
+    "screenId": "6c75d2aa24034abe9cf47bc951e0c32a",
+    "title": "Main Menu - Production Ready",
+    "componentName": "MainMenuProductionReady",
+    "file": "src/screens/MainMenuProductionReady.tsx",
+    "buttons": 1,
+    "inputs": 0,
+    "links": 2,
+    "actions": [
+      {
+        "id": "start-game-1",
+        "kind": "button",
+        "label": "Start Game",
+        "index": 0
+      }
+    ]
+  },
+  {
+    "screenId": "bb0b4068cdad43559f8c134f3621d7ad",
+    "title": "Game Board - Production Ready",
+    "componentName": "GameBoardProductionReady",
+    "file": "src/screens/GameBoardProductionReady.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 8,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "screenId": "79cc01d8909e4e5dbc6e3fa40e3c8680",
+    "title": "Controls Help - Production Ready",
+    "componentName": "ControlsHelpProductionReady",
+    "file": "src/screens/ControlsHelpProductionReady.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 1,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "screenId": "f25346ee1a0f4f1e8d9fb14f3c2978f1",
+    "title": "Pause Overlay - Production Ready",
+    "componentName": "PauseOverlayProductionReady",
+    "file": "src/screens/PauseOverlayProductionReady.tsx",
+    "buttons": 4,
+    "inputs": 0,
+    "links": 0,
+    "actions": [
+      {
+        "id": "resume-1",
+        "kind": "button",
+        "label": "Resume",
+        "index": 0
+      },
+      {
+        "id": "restart-2",
+        "kind": "button",
+        "label": "Restart",
+        "index": 1
+      },
+      {
+        "id": "settings-3",
+        "kind": "button",
+        "label": "Settings",
+        "index": 2
+      },
+      {
+        "id": "main-menu-4",
+        "kind": "button",
+        "label": "Main Menu",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "screenId": "aa84ef160ecf4ca096cfe5c9d46db3ba",
+    "title": "Game Options - Production Ready",
+    "componentName": "GameOptionsProductionReady",
+    "file": "src/screens/GameOptionsProductionReady.tsx",
+    "buttons": 5,
+    "inputs": 6,
+    "links": 8,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "reset-defaults-4",
+        "kind": "button",
+        "label": "RESET DEFAULTS",
+        "index": 3
+      },
+      {
+        "id": "save-changes-5",
+        "kind": "button",
+        "label": "SAVE CHANGES",
+        "index": 4
+      }
+    ]
+  },
+  {
+    "screenId": "ab289a75c78d4d9bbd51f990ab49cda1",
+    "title": "Game Over - Production Ready",
+    "componentName": "GameOverProductionReady",
+    "file": "src/screens/GameOverProductionReady.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 0,
+    "actions": [
+      {
+        "id": "reboot-sequence-1",
+        "kind": "button",
+        "label": "REBOOT SEQUENCE",
+        "index": 0
+      },
+      {
+        "id": "main-menu-2",
+        "kind": "button",
+        "label": "MAIN MENU",
+        "index": 1
+      },
+      {
+        "id": "share-data-3",
+        "kind": "button",
+        "label": "SHARE DATA",
+        "index": 2
+      }
+    ]
+  }
+]
