@@ -1,0 +1,587 @@
+[
+  {
+    "screenId": "6c75d2aa24034abe9cf47bc951e0c32a",
+    "screenTitle": "Main Menu - Production Ready",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#settings",
+        "line": 157
+      },
+      {
+        "type": "link",
+        "label": "How to Play",
+        "href": "#how-to-play",
+        "line": 161
+      },
+      {
+        "type": "button",
+        "label": "Start Game",
+        "line": 153
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#settings",
+        "line": 157
+      },
+      {
+        "type": "link",
+        "label": "How to Play",
+        "href": "#how-to-play",
+        "line": 161
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Start Game",
+        "line": 153
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 3,
+    "requiresRouter": true,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "bb0b4068cdad43559f8c134f3621d7ad",
+    "screenTitle": "Game Board - Production Ready",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 297
+      },
+      {
+        "type": "link",
+        "label": "STATS",
+        "href": "#",
+        "line": 301
+      },
+      {
+        "type": "link",
+        "label": "SOCIAL",
+        "href": "#",
+        "line": 305
+      },
+      {
+        "type": "link",
+        "label": "ROOT",
+        "href": "#",
+        "line": 309
+      },
+      {
+        "type": "link",
+        "label": "CLASSIC",
+        "href": "#",
+        "line": 321
+      },
+      {
+        "type": "link",
+        "label": "SPRINT",
+        "href": "#",
+        "line": 325
+      },
+      {
+        "type": "link",
+        "label": "RANKED",
+        "href": "#",
+        "line": 329
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 333
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 156
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 159
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 162
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 297
+      },
+      {
+        "type": "link",
+        "label": "STATS",
+        "href": "#",
+        "line": 301
+      },
+      {
+        "type": "link",
+        "label": "SOCIAL",
+        "href": "#",
+        "line": 305
+      },
+      {
+        "type": "link",
+        "label": "ROOT",
+        "href": "#",
+        "line": 309
+      },
+      {
+        "type": "link",
+        "label": "CLASSIC",
+        "href": "#",
+        "line": 321
+      },
+      {
+        "type": "link",
+        "label": "SPRINT",
+        "href": "#",
+        "line": 325
+      },
+      {
+        "type": "link",
+        "label": "RANKED",
+        "href": "#",
+        "line": 329
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 333
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 156
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 159
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 162
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 11,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "79cc01d8909e4e5dbc6e3fa40e3c8680",
+    "screenTitle": "Controls Help - Production Ready",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "RETURN TO MENU",
+        "href": "index.html",
+        "line": 140
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 123
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 127
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 131
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "RETURN TO MENU",
+        "href": "index.html",
+        "line": 140
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 123
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 127
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 131
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 4,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "f25346ee1a0f4f1e8d9fb14f3c2978f1",
+    "screenTitle": "Pause Overlay - Production Ready",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Resume",
+        "line": 163
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Main Menu",
+        "line": 178
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Resume",
+        "line": 163
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Main Menu",
+        "line": 178
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 4,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "aa84ef160ecf4ca096cfe5c9d46db3ba",
+    "screenTitle": "Game Options - Production Ready",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "CLASSIC",
+        "href": "#",
+        "line": 177
+      },
+      {
+        "type": "link",
+        "label": "SPRINT",
+        "href": "#",
+        "line": 181
+      },
+      {
+        "type": "link",
+        "label": "RANKED",
+        "href": "#",
+        "line": 185
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 189
+      },
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 291
+      },
+      {
+        "type": "link",
+        "label": "STATS",
+        "href": "#",
+        "line": 295
+      },
+      {
+        "type": "link",
+        "label": "SOCIAL",
+        "href": "#",
+        "line": 299
+      },
+      {
+        "type": "link",
+        "label": "ROOT",
+        "href": "#",
+        "line": 303
+      },
+      {
+        "type": "button",
+        "label": "arrow_back",
+        "line": 155
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 161
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 164
+      },
+      {
+        "type": "button",
+        "label": "RESET DEFAULTS",
+        "line": 278
+      },
+      {
+        "type": "button",
+        "label": "SAVE CHANGES",
+        "line": 281
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 219
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 226
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 233
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 249
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 259
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 268
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "CLASSIC",
+        "href": "#",
+        "line": 177
+      },
+      {
+        "type": "link",
+        "label": "SPRINT",
+        "href": "#",
+        "line": 181
+      },
+      {
+        "type": "link",
+        "label": "RANKED",
+        "href": "#",
+        "line": 185
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 189
+      },
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 291
+      },
+      {
+        "type": "link",
+        "label": "STATS",
+        "href": "#",
+        "line": 295
+      },
+      {
+        "type": "link",
+        "label": "SOCIAL",
+        "href": "#",
+        "line": 299
+      },
+      {
+        "type": "link",
+        "label": "ROOT",
+        "href": "#",
+        "line": 303
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "arrow_back",
+        "line": 155
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 161
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 164
+      },
+      {
+        "type": "button",
+        "label": "RESET DEFAULTS",
+        "line": 278
+      },
+      {
+        "type": "button",
+        "label": "SAVE CHANGES",
+        "line": 281
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 219
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 226
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 233
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 249
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 259
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 268
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 19,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "ab289a75c78d4d9bbd51f990ab49cda1",
+    "screenTitle": "Game Over - Production Ready",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "REBOOT SEQUENCE",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "MAIN",
+        "line": 153
+      },
+      {
+        "type": "button",
+        "label": "DATA",
+        "line": 157
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "REBOOT SEQUENCE",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "MAIN",
+        "line": 153
+      },
+      {
+        "type": "button",
+        "label": "DATA",
+        "line": 157
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 3,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
