@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pause Menu - Arcade</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Geist:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#594400",
+                      "on-primary-fixed-variant": "#4f378a",
+                      "on-tertiary-fixed": "#241a00",
+                      "on-background": "#e6e0e9",
+                      "surface-container-high": "#2b292f",
+                      "tertiary-fixed-dim": "#e7c365",
+                      "outline-variant": "#494551",
+                      "on-error": "#690005",
+                      "surface-container-low": "#1d1b20",
+                      "on-tertiary-container": "#503d00",
+                      "error-container": "#93000a",
+                      "surface-variant": "#36343a",
+                      "surface": "#141218",
+                      "on-primary": "#381e72",
+                      "inverse-on-surface": "#322f35",
+                      "on-secondary-container": "#bfb2da",
+                      "tertiary": "#e7c365",
+                      "surface-container": "#211f24",
+                      "surface-container-highest": "#36343a",
+                      "surface-tint": "#cfbcff",
+                      "secondary-fixed-dim": "#cdc0e9",
+                      "inverse-primary": "#6750a4",
+                      "on-secondary-fixed-variant": "#4b4263",
+                      "secondary-container": "#4d4465",
+                      "surface-dim": "#141218",
+                      "on-surface-variant": "#cbc4d2",
+                      "primary-fixed-dim": "#cfbcff",
+                      "primary": "#cfbcff",
+                      "background": "#141218",
+                      "tertiary-fixed": "#ffdf93",
+                      "on-error-container": "#ffdad6",
+                      "outline": "#948e9c",
+                      "inverse-surface": "#e6e0e9",
+                      "surface-bright": "#3b383e",
+                      "tertiary-container": "#c9a74d",
+                      "error": "#ffb4ab",
+                      "on-primary-container": "#e0d2ff",
+                      "on-tertiary": "#3e2e00",
+                      "secondary-fixed": "#e9ddff",
+                      "secondary": "#cdc0e9",
+                      "on-surface": "#e6e0e9",
+                      "on-secondary": "#342b4b",
+                      "on-secondary-fixed": "#1f1635",
+                      "primary-fixed": "#e9ddff",
+                      "primary-container": "#6750a4",
+                      "surface-container-lowest": "#0f0d13",
+                      "on-primary-fixed": "#22005d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "lg": "24px",
+                      "xl": "32px",
+                      "xs": "4px",
+                      "touch-target": "44px",
+                      "md": "16px",
+                      "grid-cell": "32px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "headline-panel": [
+                              "Space Grotesk"
+                      ],
+                      "label-mono-sm": [
+                              "JetBrains Mono"
+                      ],
+                      "body-standard": [
+                              "Geist"
+                      ],
+                      "label-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "display-score": [
+                              "Space Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "headline-panel": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-mono-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-standard": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-score": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col items-center justify-center relative overflow-hidden font-body-standard">
+<!-- Mock Background Game Board (Blurred) -->
+<div class="absolute inset-0 z-0 flex items-center justify-center opacity-40 blur-sm pointer-events-none">
+<div class="grid grid-cols-10 grid-rows-20 gap-unit w-[320px] h-[640px] border border-outline-variant bg-surface-container-low/20 p-unit">
+<!-- Simulated Tetromino Pieces -->
+<div class="col-start-4 row-start-18 col-span-2 row-span-2 bg-primary/20 border border-primary/50 shadow-[inset_0_0_8px_rgba(207,188,255,0.3)]"></div>
+<div class="col-start-6 row-start-19 col-span-2 row-span-1 bg-tertiary/20 border border-tertiary/50 shadow-[inset_0_0_8px_rgba(231,195,101,0.3)]"></div>
+<!-- Ghost Grid overlay -->
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utb3BhY2l0eT0iMC4yIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEiPjxwYXRoIGQ9Ik0zMiAwSDBWMzIiLz48L2c+PC9zdmc+')] pointer-events-none"></div>
+</div>
+</div>
+<!-- Pause Overlay Canvas -->
+<div class="relative z-10 w-full max-w-sm px-lg flex flex-col items-center">
+<!-- Pause Header -->
+<div class="mb-xl text-center">
+<h1 class="font-display-score text-display-score text-primary tracking-tighter drop-shadow-[0_0_15px_rgba(207,188,255,0.5)]">PAUSE</h1>
+<p class="font-label-mono text-label-mono text-on-surface-variant mt-sm">SYSTEM STANDBY</p>
+</div>
+<!-- Action Menu -->
+<div class="w-full flex flex-col gap-md">
+<!-- Resume Button (Primary Focus) -->
+<button class="group relative w-full h-touch-target flex items-center justify-center bg-surface border-2 border-primary text-primary hover:bg-primary hover:text-on-primary transition-all duration-200 shadow-[0_0_10px_rgba(207,188,255,0.2)] hover:shadow-[0_0_20px_rgba(207,188,255,0.6)] rounded focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+<span class="material-symbols-outlined mr-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span class="font-headline-panel text-headline-panel uppercase tracking-wide">Resume</span>
+</button>
+<!-- Restart Button -->
+<button class="w-full h-touch-target flex items-center justify-center bg-surface border border-outline-variant text-on-surface hover:bg-surface-variant hover:border-outline transition-colors duration-200 rounded focus:outline-none focus:border-primary">
+<span class="material-symbols-outlined mr-sm">replay</span>
+<span class="font-headline-panel text-headline-panel uppercase">Restart</span>
+</button>
+<!-- Settings Button -->
+<button class="w-full h-touch-target flex items-center justify-center bg-surface border border-outline-variant text-on-surface hover:bg-surface-variant hover:border-outline transition-colors duration-200 rounded focus:outline-none focus:border-primary">
+<span class="material-symbols-outlined mr-sm">settings</span>
+<span class="font-headline-panel text-headline-panel uppercase">Settings</span>
+</button>
+<!-- Main Menu Button (Destructive/Secondary) -->
+<button class="w-full h-touch-target flex items-center justify-center bg-surface border border-outline-variant text-error hover:bg-error-container hover:text-on-error-container hover:border-error transition-colors duration-200 rounded focus:outline-none focus:border-error mt-sm">
+<span class="material-symbols-outlined mr-sm">logout</span>
+<span class="font-headline-panel text-headline-panel uppercase">Main Menu</span>
+</button>
+</div>
+</div>
+</body></html>
