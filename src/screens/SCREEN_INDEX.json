@@ -1,0 +1,200 @@
+[
+  {
+    "screenId": "86578de320bd4443b787c6e22be3ab0f",
+    "title": "Main Menu",
+    "componentName": "MainMenu",
+    "file": "src/screens/MainMenu.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 0,
+    "actions": [
+      {
+        "id": "start-game-1",
+        "kind": "button",
+        "label": "Start Game",
+        "index": 0
+      },
+      {
+        "id": "settings-2",
+        "kind": "button",
+        "label": "Settings",
+        "index": 1
+      },
+      {
+        "id": "how-to-play-3",
+        "kind": "button",
+        "label": "How to Play",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "screenId": "e744952ce8a746198ec2524c3a862c08",
+    "title": "Controls Help",
+    "componentName": "ControlsHelp",
+    "file": "src/screens/ControlsHelp.tsx",
+    "buttons": 4,
+    "inputs": 0,
+    "links": 0,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "return-to-menu-4",
+        "kind": "button",
+        "label": "RETURN TO MENU",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "screenId": "a0b06708931f46e2a4912b37159125ea",
+    "title": "Game Over",
+    "componentName": "GameOver",
+    "file": "src/screens/GameOver.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 0,
+    "actions": [
+      {
+        "id": "reboot-sequence-1",
+        "kind": "button",
+        "label": "REBOOT SEQUENCE",
+        "index": 0
+      },
+      {
+        "id": "main-menu-2",
+        "kind": "button",
+        "label": "MAIN MENU",
+        "index": 1
+      },
+      {
+        "id": "share-data-3",
+        "kind": "button",
+        "label": "SHARE DATA",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "screenId": "df228668f66d491894b68b8960230a51",
+    "title": "Game Board",
+    "componentName": "GameBoard",
+    "file": "src/screens/GameBoard.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 8,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "screenId": "15f9f907e6ee4880bcd6e650efb17527",
+    "title": "Game Options",
+    "componentName": "GameOptions",
+    "file": "src/screens/GameOptions.tsx",
+    "buttons": 5,
+    "inputs": 6,
+    "links": 8,
+    "actions": [
+      {
+        "id": "button-1-1",
+        "kind": "button",
+        "label": "Button 1",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "reset-defaults-4",
+        "kind": "button",
+        "label": "RESET DEFAULTS",
+        "index": 3
+      },
+      {
+        "id": "save-changes-5",
+        "kind": "button",
+        "label": "SAVE CHANGES",
+        "index": 4
+      }
+    ]
+  },
+  {
+    "screenId": "f827a90814a54fb3803ae924eca3520e",
+    "title": "Pause Overlay",
+    "componentName": "PauseOverlay",
+    "file": "src/screens/PauseOverlay.tsx",
+    "buttons": 4,
+    "inputs": 0,
+    "links": 0,
+    "actions": [
+      {
+        "id": "resume-1",
+        "kind": "button",
+        "label": "Resume",
+        "index": 0
+      },
+      {
+        "id": "restart-2",
+        "kind": "button",
+        "label": "Restart",
+        "index": 1
+      },
+      {
+        "id": "settings-3",
+        "kind": "button",
+        "label": "Settings",
+        "index": 2
+      },
+      {
+        "id": "main-menu-4",
+        "kind": "button",
+        "label": "Main Menu",
+        "index": 3
+      }
+    ]
+  }
+]
